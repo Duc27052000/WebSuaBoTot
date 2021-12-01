@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bang
+{
+    border: 0px solid;
+    border-collapse: collapse;
+    width: 850px;
+    margin-top:10px ;
+    margin-left:40px;
+    color: black;
+    margin-bottom: 1rem;font-family: 'Roboto',sans-serif;
+  
+    
+}
+.chu
+{
+    color:#007bff;
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: 700;
+    margin-bottom: .5rem;
+    margin-bottom:7px;
+}
+.Chu1{
+    margin-bottom: -12px;
+    font-size: 14pt;
+
+
+}
+.chu2{
+    display: block;
+    line-height: 138%;
+    color: #222;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 16px;
+   
+}
+h3{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  
+}
+li{
+    margin-left: 25px;
+    text-align:  -webkit-match-parent;
+
+}
+ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.bang1{
+    border: 1px solid wheat;
+    border-collapse: collapse;
+    width: 290px;
+    height: 347px;
+    margin-left:40px;
+    color: black;
+    margin-bottom: 1rem;font-family: 'Roboto',sans-serif;
+    margin-top: -780px;
+    margin-left: 915px;
+    
+
+  
+}
+.chu4
+{
+    border-bottom: 1px solid #dee2e6;
+    font-weight: 500;
+    line-height: 1.2;display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+  
+    font-size: 18px;
+    
+}
+
+
+
+img 
+{
+    border: 1px solid whitesmoke ;
+    width: 58px;
+    height: 61px;
+    margin-left: 220px;
+    margin-top: 20px;
+}
+.a 
+{
+    margin-top: -80px;
+    margin-left: -20px;
+    margin-right:55px;
+}
+.bang3
+{
+    height: 100px;
+    border: 1px solid whitesmoke;
+    margin-top: -17px;
+
+
+}
+.a1{
+    margin-left: 1px;
+    margin-right: 60px;
+    margin-top:-70px ;
+}
+.bang4
+{
+    height: 100px;
+    border: 1px solid whitesmoke;
+    margin-top: -0px;
+}
+
+.bang5
+{
+    height: 100px;
+    border: 1px solid whitesmoke;
+    margin-top: 0px;
+}
+
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,100 @@
+﻿body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 138%;
+    color: #222;
+    text-align: left;
+    background-color: #fff;
+}
+
+.tk {
+    font-size: 22px;
+    line-height: 25px;
+    color: #007bff !important;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.taikhoan {
+    display: flex;
+}
+
+.left,
+.right {
+    margin: 20px;
+    width: 40%;
+}
+
+.login {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius:5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.dn {
+    background-color: rgb(11, 172, 32);
+    color: #fff;
+}
+
+.dk {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.input {
+    margin:5px 0px;
+    width: 85%;
+    border: 1px solid #ddd;
+    border-radius:5px;
+    height:30px;
+}
+
+#password {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin:5px;
+    height:30px;
+}
+p label{
+    padding-left:0px;
+}
+button {
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 5px;
+}
+.required{
+    color:red;
+}
+.thanhmenu {
+    background-color: #f8f9fa !important;
+    color: black;
+    font-size: 15px;
+}
+.thanhmenu a {
+        font-size: 15px;
+        color: black;
+}

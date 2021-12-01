@@ -1,0 +1,5 @@
+E:\WebSuaBo\WebSuaBo\Common\bin\Debug\Common.dll
+E:\WebSuaBo\WebSuaBo\Common\bin\Debug\Common.pdb
+E:\WebSuaBo\WebSuaBo\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+E:\WebSuaBo\WebSuaBo\Common\obj\Debug\Common.dll
+E:\WebSuaBo\WebSuaBo\Common\obj\Debug\Common.pdb

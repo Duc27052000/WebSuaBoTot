@@ -1,0 +1,354 @@
+﻿
+@{
+    ViewBag.Title = "Trang Chủ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var listFeatureProduct = (List<Model.EF.Product>)ViewBag.ListFeatureProduct;
+    var listNameProduct_3 = (List<Model.EF.Product>)ViewBag.ListNameProduct_3;
+    var listNameProduct_6 = (List<Model.EF.Product>)ViewBag.ListNameProduct_6;
+    var listNameProduct_18 = (List<Model.EF.Product>)ViewBag.ListNameProduct_18;
+}
+
+<body>
+    <div id="full-page" class="content-area">
+        <div class="container">
+            <main id="main" class="site-main">
+                <div>
+                    <div class="elementor-inner">
+                        <div class="elementor-section-wrap">
+
+                            <div class="row">
+
+                                <div class="col-12">
+                                    @section slide{
+                                        <div class="row">
+                                            <div class="col-3">
+                                                @{ Html.RenderAction("ProductCategory", "Product");}
+                                            </div>
+
+                                            <div class="col-7">
+                                                <div id="carouselExampleDark" class="carousel carousel-dark slide"
+                                                     data-bs-ride="carousel">
+                                                    <div class="carousel-indicators">
+                                                        <button type="button" data-bs-target="#carouselExampleDark"
+                                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                                aria-label="Slide 1"></button>
+                                                        <button type="button" data-bs-target="#carouselExampleDark"
+                                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                        <button type="button" data-bs-target="#carouselExampleDark"
+                                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    </div>
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active" data-bs-interval="10000">
+                                                            <img src="/Asset/Client/img/sua-glico-khuyen-mai-720x445.png"
+                                                                 class="d-block w-100" alt="...">
+
+                                                        </div>
+                                                        <div class="carousel-item" data-bs-interval="2000">
+                                                            <img src="/Asset/Client/img/sua-morinaga-khuyen-mai-1-737x455.png"
+                                                                 class="d-block w-100" alt="...">
+
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="/Asset/Client/img/sua-vitadairy-khuyen-mai-698x431.png"
+                                                                 class="d-block w-100" alt="...">
+
+                                                        </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button"
+                                                            data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon"
+                                                              aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button"
+                                                            data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon"
+                                                              aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="elementor-image">
+                                                    <a href="#"><img src="/Asset/Client/img/sbt-baner-1.png" alt=""></a>
+                                                </div>
+                                                <div class="elementor-image">
+                                                    <a href="#"><img src="/Asset/Client/img/sbt-baner-2.png" alt=""></a>
+                                                </div>
+                                                <div class="elementor-image">
+                                                    <a href="#"><img src="/Asset/Client/img/sbt-baner-3.png" alt=""></a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    }
+
+
+                                    <section class="elementor-section elementor-top-section elementor-element elementor-element-54a0f50 row elementor-hidden-phone elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                             data-id="54a0f50" data-element_type="section"
+                                             data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                        <div class="elementor-container elementor-column-gap-no">
+                                            <div class="elementor-row">
+                                                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-d5d27f7"
+                                                     data-id="d5d27f7" data-element_type="column">
+                                                    <div class="elementor-column-wrap elementor-element-populated">
+                                                        <div class="elementor-widget-wrap">
+                                                            <div class="elementor-element elementor-element-e51b1e4 elementor-widget elementor-widget-image"
+                                                                 data-id="e51b1e4" data-element_type="widget"
+                                                                 data-widget_type="image.default">
+                                                                <div class="elementor-widget-container">
+                                                                    <div class="elementor-image">
+                                                                        <a href="####">
+                                                                            <img width="291" height="179"
+                                                                                 src="https://suabottot.com/wp-content/uploads/elementor/thumbs/1-mua-sua-tang-qua-sua-bot-tot-ot73bz13tll6szo8mf1eljrgyrfod5b6yutnlhx0hq.png"
+                                                                                 title="1-mua-sua-tang-qua-sua-bot-tot"
+                                                                                 alt="Mua sữa tặng quà"
+                                                                                 class="lazyloaded"
+                                                                                 data-ll-status="loaded"><noscript>
+                                                                                <img width="291" height="179"
+                                                                                     src="https://suabottot.com/wp-content/uploads/elementor/thumbs/1-mua-sua-tang-qua-sua-bot-tot-ot73bz13tll6szo8mf1eljrgyrfod5b6yutnlhx0hq.png"
+                                                                                     title="1-mua-sua-tang-qua-sua-bot-tot"
+                                                                                     alt="Mua sữa tặng quà" />
+                                                                            </noscript>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-b2d65ff"
+                                                     data-id="b2d65ff" data-element_type="column">
+                                                    <div class="elementor-column-wrap elementor-element-populated">
+                                                        <div class="elementor-widget-wrap">
+                                                            <div class="elementor-element elementor-element-6c3f613 elementor-widget elementor-widget-image"
+                                                                 data-id="6c3f613" data-element_type="widget"
+                                                                 data-widget_type="image.default">
+                                                                <div class="elementor-widget-container">
+                                                                    <div class="elementor-image">
+                                                                        <a href="####">
+                                                                            <img width="291" height="175"
+                                                                                 src="https://suabottot.com/wp-content/uploads/elementor/thumbs/sua-morinaga-khuyen-mai-1-oum2kircxeg6hkq6qd94asol6iu0huzk8v951vylqu.png"
+                                                                                 title="sua-morinaga-khuyen-mai"
+                                                                                 alt="Sữa Morinaga Khuyến Mãi"
+                                                                                 class="lazyloaded"
+                                                                                 data-ll-status="loaded"><noscript>
+                                                                                <img width="291" height="175"
+                                                                                     src="https://suabottot.com/wp-content/uploads/elementor/thumbs/sua-morinaga-khuyen-mai-1-oum2kircxeg6hkq6qd94asol6iu0huzk8v951vylqu.png"
+                                                                                     title="sua-morinaga-khuyen-mai"
+                                                                                     alt="Sữa Morinaga Khuyến Mãi" />
+                                                                            </noscript>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-958c0b6"
+                                                     data-id="958c0b6" data-element_type="column">
+                                                    <div class="elementor-column-wrap elementor-element-populated">
+                                                        <div class="elementor-widget-wrap">
+                                                            <div class="elementor-element elementor-element-ccea326 elementor-widget elementor-widget-image"
+                                                                 data-id="ccea326" data-element_type="widget"
+                                                                 data-widget_type="image.default">
+                                                                <div class="elementor-widget-container">
+                                                                    <div class="elementor-image">
+                                                                        <a href="###">
+                                                                            <img width="737" height="445"
+                                                                                 src="https://suabottot.com/wp-content/uploads/2020/09/sua-meiji-khuyen-mai.png"
+                                                                                 class="attachment-full size-full lazyloaded"
+                                                                                 alt="Sữa Meiji khuyến mãi"
+                                                                                 sizes="(max-width: 737px) 100vw, 737px"
+                                                                                 srcset="https://suabottot.com/wp-content/uploads/2020/09/sua-meiji-khuyen-mai.png 737w, https://suabottot.com/wp-content/uploads/2020/09/sua-meiji-khuyen-mai-300x181.png 300w, https://suabottot.com/wp-content/uploads/2020/09/sua-meiji-khuyen-mai-400x242.png 400w"
+                                                                                 data-ll-status="loaded"><noscript>
+                                                                                <img width="737" height="445"
+                                                                                     src="https://suabottot.com/wp-content/uploads/2020/09/sua-meiji-khuyen-mai.png"
+                                                                                     class="attachment-full size-full"
+                                                                                     alt="Sữa Meiji khuyến mãi"
+                                                                                     srcset="https://suabottot.com/wp-content/uploads/2020/09/sua-meiji-khuyen-mai.png 737w, https://suabottot.com/wp-content/uploads/2020/09/sua-meiji-khuyen-mai-300x181.png 300w, https://suabottot.com/wp-content/uploads/2020/09/sua-meiji-khuyen-mai-400x242.png 400w"
+                                                                                     sizes="(max-width: 737px) 100vw, 737px" />
+                                                                            </noscript>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-dfed112"
+                                                     data-id="dfed112" data-element_type="column">
+                                                    <div class="elementor-column-wrap elementor-element-populated">
+                                                        <div class="elementor-widget-wrap">
+                                                            <div class="elementor-element elementor-element-43d1d1a elementor-widget elementor-widget-image"
+                                                                 data-id="43d1d1a" data-element_type="widget"
+                                                                 data-widget_type="image.default">
+                                                                <div class="elementor-widget-container">
+                                                                    <div class="elementor-image">
+                                                                        <a href="#">
+                                                                            <img width="291" height="180"
+                                                                                 src="https://suabottot.com/wp-content/uploads/elementor/thumbs/sua-hikid-khuyen-mai-2019-2-ot73bcgz9kqb9pr90woa7z7pigb3y2jjphmdp6pm14.jpg"
+                                                                                 title="sua-hikid-khuyen-mai-2019-2"
+                                                                                 alt="sua-hikid-khuyen-mai-2019-2"
+                                                                                 class="lazyloaded"
+                                                                                 data-ll-status="loaded"><noscript>
+                                                                                <img width="291" height="180"
+                                                                                     src="https://suabottot.com/wp-content/uploads/elementor/thumbs/sua-hikid-khuyen-mai-2019-2-ot73bcgz9kqb9pr90woa7z7pigb3y2jjphmdp6pm14.jpg"
+                                                                                     title="sua-hikid-khuyen-mai-2019-2"
+                                                                                     alt="sua-hikid-khuyen-mai-2019-2" />
+                                                                            </noscript>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="khuyenmai">
+                                        <table class="tb1" border="1">
+                                            <tr class="km">
+                                                <td colspan="6">
+                                                    <a href="#" class="tb2">
+                                                        SẢN PHẨM KHUYẾN MÃI
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tb1">
+                                                    <table width="100%" class="tb2">
+                                                        @foreach (var item in listFeatureProduct)
+                                                        {
+                                                            <td class="tb1">
+                                                                <table width="100%" class="tb3">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <img width="150" height="150" style="margin-left: auto; margin-right: auto"
+                                                                                 src="@item.Image">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="/chi-tiet/@item.MetaTitle-@item.ID" class="thongtin">
+                                                                                <h2 class="woocommerce-loop-product__title">
+                                                                                    @item.Name
+                                                                                </h2>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="gia" style="text-decoration-line:line-through">@item.Price đ</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="gia">@item.PromotionPrice đ</td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        }
+
+
+                                                    </table>
+                                                </td>
+                                        </table>
+                                    </section>
+                                    <section>
+                                        <div class="ct1">
+                                            <div class="left">
+                                                <a href="/san-pham/sua-tang-can-cho-be-3" class="tc">
+                                                    <h5>SỮA TĂNG CÂN CHO BÉ</h5>
+                                                </a>
+
+                                                <img width="420" height="552"
+                                                     src="https://suabottot.com/wp-content/uploads/2019/11/sua-tang-can.jpg">
+                                            </div>
+                                            <div class="right">
+                                                @foreach (var item in listNameProduct_3)
+                                                {
+                                                    <div class="tb3">
+                                                        <div><img width="150" height="150" style="margin-left: auto; margin-right: auto" src="@item.Image"></div>
+                                                        <div>
+                                                            <a href="/chi-tiet/@item.MetaTitle-@item.ID" class="thongtin">
+                                                                <h2 class="woocommerce-loop-product__title">
+                                                                    @item.Name
+                                                                </h2>
+                                                            </a>
+                                                        </div>
+                                                        <div class="gia">@item.Price<span>đ</span> </div>
+                                                    </div>
+                                                }
+                                            </div>
+
+                                        </div>
+                                    </section>
+
+                                    <section>
+                                        <div class="ct1">
+                                            <div class="left">
+                                                <a href="/san-pham/sua-tang-non-6" class="tc">
+                                                    <h5>SỮA NON</h5>
+                                                </a>
+
+                                                <img width="420" height="552" src="/Asset/Client/img/suabottot-tang-chieu-cao-cho-be.jpg" />">
+                                            </div>
+                                            <div class="right">
+                                                @foreach (var item in listNameProduct_6)
+                                                {
+                                                    <div class="tb3">
+                                                        <div><img width="150" height="150" style="margin-left: auto; margin-right: auto" src="@item.Image"></div>
+                                                        <div>
+                                                            <a href="/chi-tiet/@item.MetaTitle-@item.ID" class="thongtin">
+                                                                <h2 class="woocommerce-loop-product__title">
+                                                                    @item.Name
+                                                                </h2>
+                                                            </a>
+                                                        </div>
+                                                        <div class="gia">@item.Price<span>đ</span> </div>
+                                                    </div>
+                                                }
+                                            </div>
+
+                                        </div>
+                                    </section>
+
+                                    <section>
+                                        <div class="ct1">
+                                            <div class="left">
+                                                <a href="/san-pham/sua-tang-can-cho-nguoi-gay-18" class="tc">
+                                                    <h5>SỮA TĂNG CÂN CHO NGƯỜI GẦY</h5>
+                                                </a>
+                                                <img width="420" height="552" src="/Asset/Client/img/khuyen-mai-baner.jpg" />
+                                            </div>
+                                            <div class="right">
+                                                @foreach (var item in listNameProduct_18)
+                                                {
+                                                    <div class="tb3">
+                                                        <div><img width="150" height="150" style="margin-left: auto; margin-right: auto" src="@item.Image"></div>
+                                                        <div>
+                                                            <a href="/chi-tiet/@item.MetaTitle-@item.ID" class="thongtin">
+                                                                <h2 class="woocommerce-loop-product__title">
+                                                                    @item.Name
+                                                                </h2>
+                                                            </a>
+                                                        </div>
+                                                        <div class="gia">@item.Price<span>đ</span> </div>
+                                                    </div>
+                                                }
+                                            </div>
+
+                                        </div>
+                                    </section>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </main><!-- #main -->
+        </div>
+
+    </div>
+</body>
+

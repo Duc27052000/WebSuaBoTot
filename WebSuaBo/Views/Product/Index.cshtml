@@ -1,0 +1,139 @@
+﻿@model List<Model.EF.Product>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="/Asset/Client/css/sp.css" rel="stylesheet" type="text/css" />
+<style>
+    .row {
+        display: flex;
+    }
+
+    .ten {
+        font-size: 18px;
+        color: rgb(28, 58, 196);
+    }
+
+    .danhmuc {
+        margin-left: 30px;
+    }
+
+    #menu_principal li {
+        line-height: 40px !important;
+    }
+
+    .anhsao {
+        padding-left: 30px;
+    }
+</style>
+<div class="row">
+    <div class="col-3">
+        @{ Html.RenderAction("ProductCategory", "Product");}
+        <h4>KHUYẾN MÃI MỚI NHẤT</h4><a href="https://suabottot.com/san-pham-khuyen-mai/"><img width="275" height="396" src="https://suabottot.com/wp-content/uploads/2020/01/khuyen-mai-baner.jpg" class="image wp-image-33936 attachment-275x396 size-275x396 lazyloaded" alt="Khuyến mãi" style="max-width: 100%; height: auto;" title="KHUYẾN MÃI 1/2020" sizes="(max-width: 275px) 100vw, 275px" srcset="https://suabottot.com/wp-content/uploads/2020/01/khuyen-mai-baner.jpg 381w, https://suabottot.com/wp-content/uploads/2020/01/khuyen-mai-baner-209x300.jpg 209w" data-ll-status="loaded"><noscript><img width="275" height="396" src="https://suabottot.com/wp-content/uploads/2020/01/khuyen-mai-baner.jpg" class="image wp-image-33936  attachment-275x396 size-275x396" alt="Khuyến mãi" style="max-width: 100%; height: auto;" title="KHUYẾN MÃI 1/2020" srcset="https://suabottot.com/wp-content/uploads/2020/01/khuyen-mai-baner.jpg 381w, https://suabottot.com/wp-content/uploads/2020/01/khuyen-mai-baner-209x300.jpg 209w" sizes="(max-width: 275px) 100vw, 275px" /></noscript></a>
+    </div>
+
+    <div class="col-sm-9">
+        <div class="row">
+            <header class="woocommerce-products-header">
+                <h1 class="woocommerce-products-header__title page-title text-primary">
+                    Sản Phẩm
+                </h1>
+            </header>
+
+            <div class="clearfix"> </div>
+            <div class="woocommerce-notices-wrapper"></div><div class="woocommerce-result-count col">
+                Hiển thị tất cả 4 kết quả
+            </div>
+            <div class="col">
+                <form class="woocommerce-ordering float-right" method="get">
+                    <select name="orderby" class="orderby form-control  form-control-sm" aria-label="Đơn hàng của cửa hàng">
+                        <option value="popularity">Thứ tự theo mức độ phổ biến</option>
+                        <option value="rating">Thứ tự theo điểm đánh giá</option>
+                        <option value="date" selected="selected">Mới nhất</option>
+                        <option value="price">Thứ tự theo giá: thấp đến cao</option>
+                        <option value="price-desc">Thứ tự theo giá: cao xuống thấp</option>
+                    </select>
+                    <input type="hidden" name="paged" value="1">
+                </form>
+            </div>
+
+            <div class="col-12">
+                <div>
+                    <ul class="products columns-4">
+                        <div class="clearfix"></div>
+
+                        <div class="row border">
+                            @foreach (var item in Model)
+                            {
+                                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 border-right border-bottom shadow2019 item_prosp_1">
+                                    <div class="grid_shop_lindo p-3 text-center">
+                                        <a href="/chi-tiet/@item.MetaTitle-@item.ID" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                            <img width="150" height="150" src="@item.Image" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail lazyloaded" alt="@item.Name" sizes="(max-width: 250px) 100vw, 250px" />
+                                            <h2 class="woocommerce-loop-product__title">@item.Name</h2><div class="clearfix"></div>
+                                            <span class="price"><span class="woocommerce-Price-amount amount"><bdi>@item.Price<span class="woocommerce-Price-currencySymbol">₫</span></bdi></span></span>
+                                            <div class="clearfix"> </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            }
+
+                            <!--Phân Trang-->
+                            @if (ViewBag.TotalPage >= 0)
+                            {
+                                var pageDisplay = (int)(ViewBag.MaxPage);
+                                int totalPage = (int)ViewBag.TotalPage;
+                                int currentPage = ((int)ViewBag.Page);
+
+                                var startPageIndex = Math.Max(1, currentPage - pageDisplay / 2);
+                                var endPageIndex = Math.Min(totalPage, currentPage + pageDisplay / 2);
+                                var link = "/san-pham";
+
+
+                                <div class="col-12 p-3">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="page-numbers pagination justify-content-center">
+                                            @if (currentPage > ViewBag.First)
+                                            {
+                                                <li class="page-item"><a class="next justify-content-center page-link" href="@link?page=@ViewBag.Prev">Trang trước</a></li>
+                                            }
+                                            @for (int i = startPageIndex; i <= endPageIndex; i++)
+                                            {
+                                                if (currentPage == i)
+                                                {
+                                                    <li class="page-item"><span aria-current="page" class="current justify-content-center page-link bg-light">@i</span></li>
+
+                                                }
+                                                else
+                                                {
+                                                    <li class="page-item"><a class="justify-content-center page-link" href="@link?page=@i">@i</a></li>
+                                                }
+                                            }
+                                            @if (currentPage < totalPage)
+                                            {
+                                                <li class="page-item"><a class="next justify-content-center page-link" href="@link?page=@ViewBag.Next">Trang sau</a></li>
+                                            }
+                                        </ul>
+                                    </nav>
+                                </div>
+                            }
+                            else
+                            {
+                                <p class="woocommerce-info">Không tìm thấy sản phẩm nào khớp với lựa chọn của bạn.</p>
+                            }
+
+                        </div>
+                    </ul>
+                </div>
+
+
+                <div class="clearfix"> </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+

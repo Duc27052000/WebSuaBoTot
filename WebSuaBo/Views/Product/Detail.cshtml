@@ -1,0 +1,619 @@
+﻿@model Model.EF.Product
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var category = (Model.EF.ProductCategory)ViewBag.Category;
+    var listCreateProduct = (List<Model.EF.Product>)ViewBag.ListCreateProduct;
+}
+
+<style>
+    .them {
+        background-color: #1815cc;
+        border: 1px solid #BDBDBD;
+        padding: 7px 14px;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .mua {
+        background-color: #e01313;
+        border: 1px solid #BDBDBD;
+        padding: 7px 14px;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .price {
+        color: #ff9800 !important;
+        font-size: 20px !important;
+        line-height: 35px;
+        font-weight: 700;
+    }
+
+    .radio {
+        width: auto;
+    }
+</style>
+<link href="/Asset/Client/css/sp.css" rel="stylesheet" type="text/css" />
+<div class="container">
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+            <nav class="woocommerce-breadcrumb">
+                <div style="background: #f7f6f7" class="rounded p-2">
+                    <ol vocab="https://schema.org/" typeof="BreadcrumbList">
+                        <li property="itemListElement" typeof="ListItem">
+                            <a property="item" typeof="WebPage"
+                               href="/Home/Index"><span property="name">Trang chủ</span></a>
+                            <meta property="position" content="1">
+                        </li> ›
+                        <li property="itemListElement" typeof="ListItem">
+                            <a property="item" typeof="WebPage"
+                               href="/san-pham/@category.MetaTitle-@category.ID"><span property="name">@category.Name</span></a>
+                            <meta property="position" content="2">
+                        </li> › @Model.Name
+                    </ol>
+                </div>
+            </nav>
+
+            <div class="woocommerce-notices-wrapper"></div>
+            <div id="product-8460"
+                 class="product type-product post-8460 status-publish first instock product_cat-san-pham-khuyen-mai product_cat-sua-de product_cat-sua-hikid-han-quoc product_cat-sua-ildong-han-quoc product_cat-sua-tang-chieu-cao product_tag-sua-de product_tag-sua-de-han-quoc product_tag-sua-de-hikid product_tag-sua-de-hikid-han-quoc has-post-thumbnail shipping-taxable purchasable product-type-simple">
+                <div class="bg-white mb-2 p-2 w-100 rounded">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4">
+                            <div class="p-3">
+                                <div class="w-100 mb-0 pb-0 woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images"
+                                     data-columns="4" style="opacity: 1; transition: opacity 0.25s ease-in-out 0s;">
+                                    <a href="#" class="woocommerce-product-gallery__trigger">🔍</a>
+
+                                    <div class="flex-viewport">
+                                        <img width="300" height="300"
+                                             src="@Model.Image"
+                                             class="" alt="@Model.Name" title="sua-hikid-de" data-caption=""
+                                             alt="@Model.Name">
+
+
+                                    </div>
+                                    <ul class="flex-control-thumbs">
+                                        <li>
+                                            <img width="100" src="@Model.Image"
+                                                 alt="@Model.Name" draggable="false" class="flex-active">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-5">
+
+                            <div class="summary entry-summary w-100">
+                                <h1 class="product_title entry-title text-dark font-weight-bold pt-2">
+                                    @Model.Name
+                                </h1>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="product_meta">
+
+
+
+                                            <span class="sku_wrapper border-right pr-1 mr-1">
+                                                Mã: <span class="sku">@Model.Code</span>
+                                            </span>
+
+
+
+                                            Tình trạng: <span class="text-success">@Model.Status</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="woocommerce-product-rating devvn_single_rating">
+                                    <span class="devvn_average_rate">
+                                        |
+                                    </span>
+                                    <span class="devvn_sold"><span class="count">@Model.ViewCount</span> đã bán</span>
+                                </div>
+
+                                <p class="price">
+                                    <span class="woocommerce-Price-amount amount">
+
+                                        @if (Model.PromotionPrice != null)
+                                        {
+                                        <bdi style="text-decoration-line:line-through">
+                                            @Model.Price<span class="woocommerce-Price-currencySymbol" style="text-decoration-line:line-through">₫</span>
+                                            <br />
+                                        </bdi>
+
+                                            <bdi>
+                                                @Model.PromotionPrice <span class="woocommerce-Price-currencySymbol">đ</span>
+                                            </bdi>
+                                        }
+                                        else
+                                        {
+                                            @Model.Price<span class="woocommerce-Price-currencySymbol">₫</span>
+                                        }
+
+                                    </span>
+                                </p>
+
+
+                                <div class="woocommerce-product-details__short-description border-top border-bottom pt-2 mt-2 pb-2 mb-3">
+                                    <ul class="ml-0 pl-0">
+                                        <li>@Model.Descriptions</li>
+
+                                    </ul>
+                                    <a href="##" target="_blank" rel="noopener">
+                                        <img class="size-full wp-image-44699 aligncenter lazyloaded"
+                                             src="https://suabottot.com/wp-content/uploads/2020/06/khuyen-mai-hom-nay.jpg"
+                                             alt="Khuyến mãi" width="475" height="60"
+                                             data-ll-status="loaded"><noscript>
+                                            <img class="size-full wp-image-44699 aligncenter"
+                                                 src="https://suabottot.com/wp-content/uploads/2020/06/khuyen-mai-hom-nay.jpg"
+                                                 alt="Khuyến mãi" width="425" height="60" />
+                                        </noscript>
+                                    </a>
+                                </div>
+
+
+
+                                <div class="clearfix"></div>
+
+                                <div class="row mt-3 mb-3">
+                                    <div class="col-12">
+                                        <a class="them" href="/them-gio-hang?productId=@Model.ID&quantity=1">Thêm Vào Giỏ</a>
+                                        <a class="mua" href="/them-gio-hang?productId=@Model.ID&quantity=1">Mua Ngay</a>
+                                    </div>
+                                </div>
+
+
+
+                                </form>
+
+
+
+                            </div>
+                        </div>
+                        <div id="woocommerce_single_68" class="col-sm-12 col-md-3">
+                            <section id="black-studio-tinymce-6"
+                                     class="boderr-dot bg-white  mt-1 mb-3 rounded widget_black_studio_tinymce">
+                                <h4 class="widget-title rounded-top border-bottom p-2 pt-0 text-center">
+                                    <span>
+                                        CAM KẾT
+                                        DỊCH VỤ
+                                    </span>
+                                </h4>
+                                <div class="textwidget">
+                                    <ul>
+                                        <li>
+                                            <img src="/Asset/Client/img_sp/camket.png"> Cam kết 100% hàng chính hãng
+                                        </li>
+                                        <li>
+                                            <img src="/Asset/Client/img_sp/ship.png"> Ship Toàn Quốc, Miễn Phí Hà Nội
+                                        </li>
+                                        <li>
+                                            <img src="/Asset/Client/img_sp/doitra.png"> Đổi trả Miễn Phí trong 7 ngày
+                                        </li>
+                                        <li>
+                                            <img src="/Asset/Client/img_sp/dvu.png"> Dịch vụ khách hàng tốt nhất
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section id="black-studio-tinymce-7"
+                                     class="boderr-dot bg-white  mt-1 mb-3 rounded widget_black_studio_tinymce">
+                                <h4 class="widget-title rounded-top border-bottom p-2 pt-0 text-center">
+                                    <span>
+                                        HỖ TRỢ
+                                        KHÁCH HÀNG
+                                    </span>
+                                </h4>
+                                <div class="textwidget">
+                                    <ul>
+                                        <li>
+                                            <img src="/Asset/Client/img_sp/dt.png" height="25px"
+                                                 width="25px"><span style="font-size: 14pt;">
+                                                <strong>0961.922.556</strong><span style="font-size: 12pt; color: #808080;">(Hotline/Zalo)</span>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <img src="/Asset/Client/img_sp/dt.png" height="25px"
+                                                 width="25px"><span style="font-size: 14pt;">
+                                                <strong>0965.922.556</strong> <span style="font-size: 12pt; color: #808080;">(Hotline/Zalo)</span>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <img src="/Asset/Client/img_sp/dt.png" height="25px"
+                                                 width="25px"><span style="font-size: 14pt;">
+                                                <strong>0916.820.556</strong> <span style="font-size: 12pt; color: #808080;">(Hotline/Zalo)</span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+                <div class="bg-white mb-2 p-2 w-100 rounded">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-9">
+                            <div class="clearfix"> </div>
+                            <div id="tab_sp_lindo" class="bg-light mt-2 mb-2 pt-3 pb-3 pl-5 pr-5">
+                                <div class="row">
+                                    <div class="col-12 col-md-4 border-right">
+                                        <h2>
+                                            <a class="text-body" href="###">
+                                                Thông tin sản phẩm
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="col-12 col-md-4 border-right">
+                                        <h2>
+                                            <a class="text-body" href="##">
+                                                Video về
+                                                sản phẩm
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="col-12  col-md-4">
+                                        <h2>
+                                            <a class="text-body" href="#">
+                                                Đánh
+                                                giá
+                                            </a>
+                                        </h2>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="clearfix"> </div>
+
+                            <div id="motachitiet" class="motasanpham">
+                                <p>
+                                    @Model.Detail
+                                </p>
+                                <p>
+                                    <img class="aligncenter wp-image-36484 lazyloaded"
+                                         src="@Model.Image"
+                                         alt="@Model.Name" width="600" height="600"
+                                         sizes="(max-width: 600px) 100vw, 600px"
+                                         data-ll-status="loaded">
+                                </p>
+
+
+                                <p>
+                                    Ngoài ra, trên sản phẩm còn bổ sung tem phụ bằng tiếng Việt cung cấp các
+                                    thông tin cần thiết về sản phẩm, cách pha và thông tin nhà phân phối để người tiêu
+                                    dùng liên hệ khi cần.
+                                </p>
+
+                                <p>Nhập khẩu: Công ty TNHH XNK &amp; TM Phương Linh</p>
+                                <p>Bán lẻ: Hệ thống cửa hàng Sữa Bột Tốt – Giao hàng toàn quốc!</p>
+                                <div class="clearfix"> </div>
+                            </div>
+                            <div class="clearfix"> </div>
+
+
+                            <div class="clearfix"> </div>
+                            <div id="video" class="video">
+                                <h2 class="sing_title_css"><span>Video</span></h2>
+                                <div class="text-center">
+                                    <div class="arve" data-mode="normal" data-oembed="1" data-provider="youtube"
+                                         id="arve-youtube-2k-ewzfeazs611b1d773cb8f371070961" style="max-width:900px;"
+                                         itemscope="" itemtype="http://schema.org/VideoObject">
+                                        <span class="arve-inner">
+                                            <span class="arve-embed arve-embed--has-aspect-ratio">
+                                                <span class="arve-ar" style="padding-top:56.200000%"></span>
+                                                <meta itemprop="embedURL"
+                                                      content="https://www.youtube-nocookie.com/embed/2K-EwZFeAzs?feature=oembed&amp;iv_load_policy=3&amp;modestbranding=1&amp;rel=0&amp;autohide=1&amp;playsinline=0&amp;autoplay=0">
+                                                <meta itemprop="uploadDate" content="2020-3-20">
+                                                <iframe loading="lazy"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowfullscreen="" class="arve-iframe fitvidsignore lazyloaded"
+                                                        data-arve="arve-youtube-2k-ewzfeazs611b1d773cb8f371070961"
+                                                        data-src-no-ap="https://www.youtube-nocookie.com/embed/2K-EwZFeAzs?feature=oembed&amp;iv_load_policy=3&amp;modestbranding=1&amp;rel=0&amp;autohide=1&amp;playsinline=0&amp;autoplay=0"
+                                                        frameborder="0"
+                                                        sandbox="allow-scripts allow-same-origin allow-presentation allow-popups allow-popups-to-escape-sandbox"
+                                                        scrolling="no"
+                                                        src="https://www.youtube-nocookie.com/embed/2K-EwZFeAzs?feature=oembed&amp;iv_load_policy=3&amp;modestbranding=1&amp;rel=0&amp;autohide=1&amp;playsinline=0&amp;autoplay=0"
+                                                        data-rocket-lazyload="fitvidscompatible"
+                                                        data-ll-status="loaded"></iframe><noscript>
+                                                    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                            allowfullscreen class="arve-iframe fitvidsignore"
+                                                            data-arve="arve-youtube-2k-ewzfeazs611b1d773cb8f371070961"
+                                                            data-src-no-ap="https://www.youtube-nocookie.com/embed/2K-EwZFeAzs?feature=oembed&amp;iv_load_policy=3&amp;modestbranding=1&amp;rel=0&amp;autohide=1&amp;playsinline=0&amp;autoplay=0"
+                                                            frameborder="0" height="505.8"
+                                                            sandbox="allow-scripts allow-same-origin allow-presentation allow-popups allow-popups-to-escape-sandbox"
+                                                            scrolling="no"
+                                                            src="https://www.youtube-nocookie.com/embed/2K-EwZFeAzs?feature=oembed&#038;iv_load_policy=3&#038;modestbranding=1&#038;rel=0&#038;autohide=1&#038;playsinline=0&#038;autoplay=0"
+                                                            width="900"></iframe>
+                                                </noscript>
+                                                <meta itemprop="thumbnailUrl"
+                                                      content="https://suabottot.com/wp-content/uploads/2020/05/sua-hikid.jpg">
+                                                <meta itemprop="name"
+                                                      content="Sữa HIKID Hàn Quốc Mẫu Mới Giúp Tăng Chiều Cao, Tăng Cân tốt hơn!">
+                                                <meta itemprop="description"
+                                                      content="HIKID CẢI TIẾN MỚI Thay đổi tỉ lệ, thành phần nâng cao chất lượng giá không đổi Theo thông tin chính thức từ công ty đưa ra từ ngày 1/1/2020 dòng sản phẩm Hikid sẽ có thay đổi về hình ảnh in trên lon mỗi hộp sữa và có sự thay đổi lớn về tỉ lệ cân bằng vi chất dinh dưỡng nhằm đảm bảo đủ dưỡng chất cho bé sự phát triển tốt nhất.">
+
+                                            </span>
+
+                                        </span>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="clearfix"> </div>
+
+                            <div id="hotline_muahang" class="text-center">
+                                <p>Gọi mua hàng: <a href="###">0961.922.556 </a> - (Tư vấn 24/7)</p>
+                                <p>
+                                    <a href="#" data-quantity="1" class="btn btn-warning btn-lg"
+                                       data-product_id="8460" data-product_sku="8801157117809"
+                                       aria-label="Thêm “Sữa Dê Hikid Hàn Quốc 700g (trẻ từ 1-9 tuổi)” vào giỏ hàng"
+                                       rel="nofollow">Thêm vào giỏ hàng</a>
+                                </p>
+                            </div>
+                            <div class="clearfix"> </div>
+
+                            <div id="danh-gia" class="comments_lind0">
+                                <h2 class="sing_title_css"><span>Khách hàng cảm nhận sản phẩm</span></h2>
+
+                                <div class="clearfix"> </div>
+
+                                <div id="reviews" class="woocommerce-Reviews no_avatar devvn-style2">
+                                    <div id="comments">
+                                        <div class="woocommerce-Reviews-title">
+                                            8 đánh giá cho <span>Sữa Dê Hikid Hàn Quốc 700g (trẻ từ 1-9 tuổi)</span>
+                                        </div>
+
+                                        <div class="star_box">
+                                            <div class="star_box_left">
+                                                <div class="star-average">
+
+                                                    <div class="woocommerce-product-rating">
+                                                        <span class="star_average">4.88</span>
+                                                        <div class="star-rating" role="img"
+                                                             aria-label="Được xếp hạng 4.88 5 sao">
+                                                            <span style="width:97.6%">
+                                                                <img src="/Asset/Client/img_sp/5sao.png">
+                                                            </span>
+                                                        </div> <a href="#" class="woocommerce-review-link"
+                                                                  rel="nofollow">
+                                                            <span class="count">8</span> đánh giá của
+                                                            khách hàng
+                                                        </a>
+
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="reviews_bar">
+                                                    <div class="devvn_review_row">
+                                                        <span class="devvn_stars_value">
+                                                            5<img src="/Asset/Client/img_sp/saoden.png">
+                                                        </span>
+                                                        <span class="devvn_rating_bar">
+                                                            <span style="background-color: #eee"
+                                                                  class="devvn_scala_rating">
+                                                                <span class="devvn_perc_rating"
+                                                                      style="width: 87%; background-color: #f5a623"></span>
+                                                            </span>
+                                                        </span>
+                                                        <span class="devvn_num_reviews"><b>87%</b> | 7 đánh giá</span>
+                                                    </div>
+                                                    <div class="devvn_review_row">
+                                                        <span class="devvn_stars_value">
+                                                            4<img src="/Asset/Client/img_sp/saoden.png">
+                                                        </span>
+                                                        <span class="devvn_rating_bar">
+                                                            <span style="background-color: #eee"
+                                                                  class="devvn_scala_rating">
+                                                                <span class="devvn_perc_rating"
+                                                                      style="width: 12%; background-color: #f5a623"></span>
+                                                            </span>
+                                                        </span>
+                                                        <span class="devvn_num_reviews"><b>12%</b> | 1 đánh giá</span>
+                                                    </div>
+                                                    <div class="devvn_review_row">
+                                                        <span class="devvn_stars_value">
+                                                            3<img src="/Asset/Client/img_sp/saoden.png">
+                                                        </span>
+                                                        <span class="devvn_rating_bar">
+                                                            <span style="background-color: #eee"
+                                                                  class="devvn_scala_rating">
+                                                                <span class="devvn_perc_rating"
+                                                                      style="width: 0%; background-color: #f5a623"></span>
+                                                            </span>
+                                                        </span>
+                                                        <span class="devvn_num_reviews"><b>0%</b> | 0 đánh giá</span>
+                                                    </div>
+                                                    <div class="devvn_review_row">
+                                                        <span class="devvn_stars_value">
+                                                            2<img src="/Asset/Client/img_sp/saoden.png">
+                                                        </span>
+                                                        <span class="devvn_rating_bar">
+                                                            <span style="background-color: #eee"
+                                                                  class="devvn_scala_rating">
+                                                                <span class="devvn_perc_rating"
+                                                                      style="width: 0%; background-color: #f5a623"></span>
+                                                            </span>
+                                                        </span>
+                                                        <span class="devvn_num_reviews"><b>0%</b> | 0 đánh giá</span>
+                                                    </div>
+                                                    <div class="devvn_review_row">
+                                                        <span class="devvn_stars_value">
+                                                            1<img src="/Asset/Client/img_sp/saoden.png">
+                                                        </span>
+                                                        <span class="devvn_rating_bar">
+                                                            <span style="background-color: #eee"
+                                                                  class="devvn_scala_rating">
+                                                                <span class="devvn_perc_rating"
+                                                                      style="width: 0%; background-color: #f5a623"></span>
+                                                            </span>
+                                                        </span>
+                                                        <span class="devvn_num_reviews"><b>0%</b> | 0 đánh giá</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="star_box_right">
+                                                <a href="javascript:void(0)" title="Đánh giá ngay"
+                                                   class="btn-reviews-now">Đánh giá ngay</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="devvn_prod_cmt " id="hoi-dap">
+                                    <strong>Hỏi đáp</strong>
+                                    <div class="devvn_cmt_form">
+                                        <form action="" method="post" id="devvn_cmt">
+                                            <div class="devvn_cmt_input">
+                                                <textarea placeholder="Mời bạn tham gia thảo luận, vui lòng nhập tiếng Việt có dấu."
+                                                          name="devvn_cmt_content" id="devvn_cmt_content"
+                                                          minlength="20"></textarea>
+                                            </div>
+                                            <div class="devvn_cmt_form_bottom ">
+                                                <div class="devvn_cmt_radio">
+                                                    <label class="radio">
+                                                        <input name="devvn_cmt_gender" type="radio" value="male"
+                                                               checked="">
+                                                        <span>Anh</span>
+                                                    </label>
+                                                    <label class="radio">
+                                                        <input name="devvn_cmt_gender" type="radio" value="female">
+                                                        <span>Chị</span>
+                                                    </label>
+                                                </div>
+                                                <div class="devvn_cmt_input">
+                                                    <input name="devvn_cmt_name" type="text" id="devvn_cmt_name"
+                                                           placeholder="Họ tên (bắt buộc)">
+                                                </div>
+                                                <div class="devvn_cmt_input">
+                                                    <input name="devvn_cmt_email" type="text" id="devvn_cmt_email"
+                                                           placeholder="Email ">
+                                                </div>
+                                                <div class="devvn_cmt_submit">
+                                                    <button type="submit" id="devvn_cmt_submit">Gửi</button>
+                                                    <input type="hidden" value="8460" name="post_ID">
+                                                    <input type="hidden" value="" name="cmt_parent_id">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="clearfix"> </div>
+                            <div class="product_meta">
+                                <span class="posted_in">
+                                    Danh mục: <a href="##" rel="tag">Sản phẩm khuyến mãi</a>, <a href="#" rel="tag">Sữa Dê</a>, <a href="#" rel="tag">Sữa Hikid Hàn Quốc</a>, <a href="#" rel="tag">
+                                        Sữa ILDONG Hàn
+                                        Quốc
+                                    </a>, <a href="#" rel="tag">
+                                        Sữa Tăng
+                                        Chiều Cao
+                                    </a>
+                                </span>
+                                <span class="tagged_as">
+                                    Từ khóa: <a href="#" rel="tag">sữa dê</a>, <a href="#"
+                                                                                  rel="tag">sữa dê hàn quốc</a>, <a href="#" rel="tag">sữa dê hikid</a>,
+                                    <a href="#" rel="tag">
+                                        sữa dê
+                                        hikid hàn quốc
+                                    </a>
+                                </span>
+                            </div>
+
+
+                        </div>
+                        <div class="col-sm-12 col-md-3">
+                            <div class="clearfix"> </div>
+                            <aside id="lindo_2sidebar" class="widget-area">
+                            </aside>
+                            <div class="clearfix"> </div>
+
+                            <div class="sticky-top">
+                                <div class="wc_upsell_shortcode">
+                                    <section class="up-sells upsells products">
+                                        <div class="clearfix"> </div>
+                                        <div class="border w-100">
+                                            <h4 class="widget-title rounded-top border-bottom p-2 pt-0 text-center">
+                                                <span>SẢN PHẨM MỚI</span>
+                                            </h4>
+                                            <div class="clearfix"> </div>
+                                            @foreach (var item in listCreateProduct)
+                                            {
+                                                <div class="p-2 shadow2019 border-bottom">
+
+                                                    <a href="/chi-tiet/@item.MetaTitle-@item.ID"
+                                                       class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                                        <div class="row upsale_pro">
+
+
+                                                            <div class="col-8 text-left">
+                                                                <h2 class="woocommerce-loop-product__title">
+                                                                    @item.Name
+                                                                </h2>
+                                                                <div class="star-rating" role="img"
+                                                                     aria-label="Được xếp hạng 5.00 5 sao">
+                                                                    <span style="width:100%">
+                                                                        <img height="30" width="100"
+                                                                             src="/Asset/Client/img_sp/5sao.png">
+                                                                    </span>
+                                                                </div>
+                                                                <span class="price">
+                                                                    <span class="woocommerce-Price-amount amount">
+                                                                        <bdi>
+                                                                            @item.Price<span class="woocommerce-Price-currencySymbol">₫</span>
+                                                                        </bdi>
+                                                                    </span>
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="col-4">
+                                                                <img width="80" height="80"
+                                                                     src="@item.Image"
+                                                                     class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail lazyloaded"
+                                                                     alt="Sữa Famna số 1"
+                                                                     sizes="(max-width: 250px) 100vw, 250px"
+                                                                     data-ll-status="loaded">
+                                                            </div>
+
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            }
+
+
+                                            <div class="clearfix"> </div>
+
+                                        </div>
+
+                                    </section>
+                                </div>
+                                <div class="clearfix"> </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+        </main>
+    </div>
+</div>
+

@@ -1,0 +1,61 @@
+﻿@model List<Model.EF.ProductCategory>
+    <h5 class="dm">Danh mục</h5>
+
+    <nav class="nav-home-aside">
+
+        <ul id="menu_principal">
+
+            <li>
+                <label for="drop-1">
+                    <a href="/khuyen-mai-qua-tang">
+                        <span class="principales">
+                            <img src="https://suabottot.com/wp-content/uploads/2020/04/SBT-ICON-2-20x20.png"
+                                 alt="">
+                        </span>KHUYẾN MÃI-QUÀ TẶNG
+                    </a>
+                </label>
+            </li>
+
+            @foreach (var item in Model.Where(x => x.ParentID == null))
+            {
+                var child = Model.Where(x => x.ParentID == item.ID);
+                var parentClass = child.Count() > 0 ? "class=principales" : "";
+                <li>
+                    <label for="drop-1">
+                        <a href="/san-pham/@item.MetaTitle-@item.ID">
+                            <span @parentClass class="principales">
+                                <img src="https://suabottot.com/wp-content/uploads/2020/04/SBT-ICON-2-20x20.png"
+                                     alt="@item.Name">
+                            </span>@item.Name
+                        </a>
+                        <span class="mif-chevron-right mif-2x derecha"></span>
+                        <span class="mif-2x derecha"></span>
+                    </label>
+                    @if (child.Count() > 0)
+                    {
+                <ul>
+                    @foreach(var childItem in child)
+                    {
+                        <li><a href="/san-pham/@childItem.MetaTitle-@childItem.ID">@childItem.Name</a></li>
+                    }
+
+                </ul>
+                    }
+
+                </li>
+            }
+
+            <li>
+                <label for="drop-1">
+                    <a href="/tich-diem-doi-qua">
+                        <span class="principales">
+                            <img src="https://suabottot.com/wp-content/uploads/2019/10/star-20x20.png"
+                                 alt="">
+                        </span>TÍCH ĐIỂM ĐỔI QUÀ
+                    </a>
+                </label>
+            </li>
+
+
+        </ul>
+    </nav>

@@ -1,0 +1,68 @@
+E:\Web\WebSuaBo\Model\bin\Debug\Model.dll
+E:\Web\WebSuaBo\Model\bin\Debug\Model.pdb
+E:\Web\WebSuaBo\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\Web\WebSuaBo\Model\obj\Debug\Model.dll
+E:\Web\WebSuaBo\Model\obj\Debug\Model.pdb
+E:\Web\WebSuaBo\Model\bin\Debug\Model.dll.config
+E:\Web\WebSuaBo\Model\bin\Debug\EntityFramework.dll
+E:\Web\WebSuaBo\Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\Web\WebSuaBo\Model\bin\Debug\EntityFramework.xml
+E:\Web\WebSuaBo\Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\Web\WebSuaBo\Model\obj\Debug\Model.csproj.CopyComplete
+E:\Web\WebSuaBo\Model\bin\Debug\PagedList.dll
+E:\Web\WebSuaBo\Model\bin\Debug\PagedList.Mvc.dll
+E:\Web\WebSuaBo\Model\bin\Debug\PagedList.xml
+E:\Web\WebSuaBo\Model\bin\Debug\PagedList.Mvc.xml
+E:\Web\WebSuaBo\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+E:\btl_web\WebSuaBo\Model\bin\Debug\Model.dll.config
+E:\btl_web\WebSuaBo\Model\bin\Debug\Model.dll
+E:\btl_web\WebSuaBo\Model\bin\Debug\Model.pdb
+E:\btl_web\WebSuaBo\Model\bin\Debug\EntityFramework.dll
+E:\btl_web\WebSuaBo\Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\btl_web\WebSuaBo\Model\bin\Debug\PagedList.dll
+E:\btl_web\WebSuaBo\Model\bin\Debug\PagedList.Mvc.dll
+E:\btl_web\WebSuaBo\Model\bin\Debug\EntityFramework.xml
+E:\btl_web\WebSuaBo\Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\btl_web\WebSuaBo\Model\bin\Debug\PagedList.xml
+E:\btl_web\WebSuaBo\Model\bin\Debug\PagedList.Mvc.xml
+E:\btl_web\WebSuaBo\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+E:\btl_web\WebSuaBo\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\btl_web\WebSuaBo\Model\obj\Debug\Model.csproj.CopyComplete
+E:\btl_web\WebSuaBo\Model\obj\Debug\Model.dll
+E:\btl_web\WebSuaBo\Model\obj\Debug\Model.pdb
+E:\WebSuaBo\WebSuaBo\Model\bin\Debug\Model.dll.config
+E:\WebSuaBo\WebSuaBo\Model\bin\Debug\Model.dll
+E:\WebSuaBo\WebSuaBo\Model\bin\Debug\Model.pdb
+E:\WebSuaBo\WebSuaBo\Model\bin\Debug\EntityFramework.dll
+E:\WebSuaBo\WebSuaBo\Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\WebSuaBo\WebSuaBo\Model\bin\Debug\PagedList.dll
+E:\WebSuaBo\WebSuaBo\Model\bin\Debug\PagedList.Mvc.dll
+E:\WebSuaBo\WebSuaBo\Model\bin\Debug\EntityFramework.xml
+E:\WebSuaBo\WebSuaBo\Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\WebSuaBo\WebSuaBo\Model\bin\Debug\PagedList.xml
+E:\WebSuaBo\WebSuaBo\Model\bin\Debug\PagedList.Mvc.xml
+E:\WebSuaBo\WebSuaBo\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+E:\WebSuaBo\WebSuaBo\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\WebSuaBo\WebSuaBo\Model\obj\Debug\Model.csproj.CopyComplete
+E:\WebSuaBo\WebSuaBo\Model\obj\Debug\Model.dll
+E:\WebSuaBo\WebSuaBo\Model\obj\Debug\Model.pdb
+E:\WebSuaBo\WebSuaBo\Model\bin\Debug\Common.dll
+E:\WebSuaBo\WebSuaBo\Model\bin\Debug\Common.pdb
+D:\HK phụ\Đức\WEB\BTLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL\Nhom22_MaSv\WebSuaBo\WebSuaBo\Model\bin\Debug\Model.dll.config
+D:\HK phụ\Đức\WEB\BTLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL\Nhom22_MaSv\WebSuaBo\WebSuaBo\Model\bin\Debug\Model.dll
+D:\HK phụ\Đức\WEB\BTLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL\Nhom22_MaSv\WebSuaBo\WebSuaBo\Model\bin\Debug\Model.pdb
+D:\HK phụ\Đức\WEB\BTLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL\Nhom22_MaSv\WebSuaBo\WebSuaBo\Model\bin\Debug\Common.dll
+D:\HK phụ\Đức\WEB\BTLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL\Nhom22_MaSv\WebSuaBo\WebSuaBo\Model\bin\Debug\EntityFramework.dll
+D:\HK phụ\Đức\WEB\BTLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL\Nhom22_MaSv\WebSuaBo\WebSuaBo\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\HK phụ\Đức\WEB\BTLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL\Nhom22_MaSv\WebSuaBo\WebSuaBo\Model\bin\Debug\PagedList.dll
+D:\HK phụ\Đức\WEB\BTLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL\Nhom22_MaSv\WebSuaBo\WebSuaBo\Model\bin\Debug\PagedList.Mvc.dll
+D:\HK phụ\Đức\WEB\BTLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL\Nhom22_MaSv\WebSuaBo\WebSuaBo\Model\bin\Debug\Common.pdb
+D:\HK phụ\Đức\WEB\BTLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL\Nhom22_MaSv\WebSuaBo\WebSuaBo\Model\bin\Debug\EntityFramework.xml
+D:\HK phụ\Đức\WEB\BTLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL\Nhom22_MaSv\WebSuaBo\WebSuaBo\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\HK phụ\Đức\WEB\BTLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL\Nhom22_MaSv\WebSuaBo\WebSuaBo\Model\bin\Debug\PagedList.xml
+D:\HK phụ\Đức\WEB\BTLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL\Nhom22_MaSv\WebSuaBo\WebSuaBo\Model\bin\Debug\PagedList.Mvc.xml
+D:\HK phụ\Đức\WEB\BTLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL\Nhom22_MaSv\WebSuaBo\WebSuaBo\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+D:\HK phụ\Đức\WEB\BTLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL\Nhom22_MaSv\WebSuaBo\WebSuaBo\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\HK phụ\Đức\WEB\BTLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL\Nhom22_MaSv\WebSuaBo\WebSuaBo\Model\obj\Debug\Model.csproj.CopyComplete
+D:\HK phụ\Đức\WEB\BTLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL\Nhom22_MaSv\WebSuaBo\WebSuaBo\Model\obj\Debug\Model.dll
+D:\HK phụ\Đức\WEB\BTLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL\Nhom22_MaSv\WebSuaBo\WebSuaBo\Model\obj\Debug\Model.pdb
